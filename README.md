@@ -19,25 +19,57 @@ Ensure the following tools are installed and accessible in your PATH:
 ## Usage
 
 1. Clone the repository or download the script file.
-2. Make the script executable:
+   ```bash
+   git clone https://github.com/AswinWhiteHat/aoda-recon
+3. Make the script executable:
    ```bash
    chmod +x recon.sh
-3. Run the script:
+4. Run the script:
    ```bash
    ./recon.sh
 
-# Script Workflow:
- ASCII Art Banner: Displays a banner using figlet.
- User Greeting: Greets the user.
- Domain Input: Prompts the user to enter a domain.
- Directory Setup: Creates and navigates into a directory named after the domain.
- Subdomain Enumeration:
- Uses subfinder, crt.sh, and findomain to enumerate subdomains.
- Combines and deduplicates the subdomains.
- Alive Subdomains Check: Uses httpx-toolkit to check which subdomains are alive.
- Crawling for Endpoints:
- Uses katana and waybackurls to find URLs and endpoints.
- Filters for sensitive files, JavaScript files, potential XSS points, and admin login pages.
- IP Gathering: Uses shodanx to gather IP information.
- Fuzzing: Uses dirsearch to fuzz for common file types on the main domain.
- Results: Saves all recon results in the specified domain's directory.
+
+
+Script Workflow
+1.Setup:
+
+Display ASCII art banner.
+Greet user.
+Prompt for domain and create a directory.
+
+2.Subdomain Enumeration:
+
+Use subfinder, crt.sh, and findomain.
+Combine and deduplicate subdomains.
+
+3.Alive Subdomains Check:
+
+Check alive subdomains using httpx-toolkit.
+
+4.Crawling for Endpoints:
+
+Gather endpoints with katana and waybackurls.
+Filter for sensitive files, JavaScript files, and potential XSS points.
+
+5.Finding Admin Logins:
+
+Identify admin login pages with httpx-toolkit.
+
+6.IP Gathering:
+
+Collect IP information using shodanx.
+
+7.Fuzzing:
+
+Perform fuzzing on the main domain using dirsearch.
+
+8.Results:
+
+Save recon results in the domain directory.
+Clean up intermediate files.
+
+
+
+
+
+
