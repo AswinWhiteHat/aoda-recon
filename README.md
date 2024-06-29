@@ -26,19 +26,18 @@ Ensure the following tools are installed and accessible in your PATH:
    ```bash
    ./recon.sh
 
-Script Workflow
-
-# ASCII Art Banner: Displays a banner using figlet.
-# User Greeting: Greets the user.
-# Domain Input: Prompts the user to enter a domain.
-# Directory Setup: Creates and navigates into a directory named after the domain.
-# Subdomain Enumeration:
-# Uses subfinder, crt.sh, and findomain to enumerate subdomains.
-# Combines and deduplicates the subdomains.
-# Alive Subdomains Check: Uses httpx-toolkit to check which subdomains are alive.
-# Crawling for Endpoints:
-# Uses katana and waybackurls to find URLs and endpoints.
-# Filters for sensitive files, JavaScript files, potential XSS points, and admin login pages.
-# IP Gathering: Uses shodanx to gather IP information.
-# Fuzzing: Uses dirsearch to fuzz for common file types on the main domain.
-# Results: Saves all recon results in the specified domain's directory.
+# Script Workflow:
+ ASCII Art Banner: Displays a banner using figlet.
+ User Greeting: Greets the user.
+ Domain Input: Prompts the user to enter a domain.
+ Directory Setup: Creates and navigates into a directory named after the domain.
+ Subdomain Enumeration:
+ Uses subfinder, crt.sh, and findomain to enumerate subdomains.
+ Combines and deduplicates the subdomains.
+ Alive Subdomains Check: Uses httpx-toolkit to check which subdomains are alive.
+ Crawling for Endpoints:
+ Uses katana and waybackurls to find URLs and endpoints.
+ Filters for sensitive files, JavaScript files, potential XSS points, and admin login pages.
+ IP Gathering: Uses shodanx to gather IP information.
+ Fuzzing: Uses dirsearch to fuzz for common file types on the main domain.
+ Results: Saves all recon results in the specified domain's directory.
