@@ -1,4 +1,4 @@
-Here's a `README.md` file for your recon script:
+Here's a `README.md` file 
 
 ```markdown
 # Recon Script
