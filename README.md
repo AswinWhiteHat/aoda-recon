@@ -24,11 +24,11 @@ Ensure the following tools are installed and accessible in your PATH:
 1. Clone the repository or download the script file.
 2. Make the script executable:
    ```bash
-   chmod +x recon.sh
+   chmod +x aoda_recon.sh
    ```
 3. Run the script:
    ```bash
-   ./recon.sh
+   ./aoda_recon.sh
    ```
 
 ## Script Workflow
